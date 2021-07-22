@@ -1,0 +1,12 @@
+library(ggplot2)
+search()
+str(iris)
+head(iris)
+plot(iris)
+plot(iris$Sepal.Width,iris$Petal.Length,col = iris$Species)
+a <- read.csv("importdata1.csv",header = T)
+library(dplyr)
+library(ggplot2)
+a%>%ggplot(aes(x1))+geom_histogram()
+a%>%ggplot(aes(x1,x2))+geom_point(aes(col = output),size = 3)
+
